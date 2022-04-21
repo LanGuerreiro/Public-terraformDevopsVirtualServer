@@ -36,3 +36,4 @@ az ad app credential list --id 00000000-0000-0000-0000-000000000000
 
 #Create User aplication
 az ad sp create-for-rbac --role="Contributor" --name="apiTerraForm" --scopes="/subscriptions/SUBSCRIPTION_ID"
+
