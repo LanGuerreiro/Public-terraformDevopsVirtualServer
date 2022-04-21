@@ -65,4 +65,7 @@ resource "azurerm_linux_virtual_machine" "linuxVM" {
     "environment" = var.tag-environment[0]
   }
 
+
 }
+
+

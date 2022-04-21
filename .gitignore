@@ -4,5 +4,5 @@ terraform/storage.azcli
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
 terraform/.terraform/*
-
 terraform/.terraform.tfstate.lock.info
+*.tfvars

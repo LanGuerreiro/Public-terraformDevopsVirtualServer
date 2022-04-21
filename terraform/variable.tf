@@ -37,11 +37,28 @@ variable "adminUser" {
   default = "admaz"
 
 }
+variable "subscription_id" {
+  type    = string
+  default = "00000000-0000-0000-0000-000000000000"
+  sensitive = true
 
-variable "long_key" {
-  type = string
-  default = <<EOF
-This is a long key.
-Running over several lines.
-EOF
 }
+variable "client_id" {
+  type    = string
+  default = "00000000-0000-0000-0000-000000000000"
+  sensitive = true
+
+}
+variable "client_secret" {
+  type    = string
+  default = "00000000-0000-0000-0000-000000000000"
+  sensitive = true
+
+}
+variable "tenant_id" {
+  type    = string
+  default = "00000000-0000-0000-0000-000000000000"
+  sensitive = true
+
+}
+

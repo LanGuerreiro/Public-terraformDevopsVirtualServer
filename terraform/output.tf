@@ -7,8 +7,8 @@
 // Output Ip Public
 output "azurerm_public_ip" {
   //value = azurerm_public_ip.public_ip.ip_address
-  value = azurerm_linux_virtual_machine.linuxVM.public_ip_address
-   depends_on = [azurerm_linux_virtual_machine.linuxVM]
+  value      = azurerm_linux_virtual_machine.linuxVM.public_ip_address
+  depends_on = [azurerm_linux_virtual_machine.linuxVM]
 }
 //Save outputIP
 resource "local_file" "outputip" {

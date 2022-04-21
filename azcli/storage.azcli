@@ -21,3 +21,18 @@ az account set --subscription "Novo Cartao"
 
 #List subscription 
 az account list --output table
+
+# Get subscription ID and tenant
+az account show --query "{Subscrition_name:name,Subscrition_id:id,tenantID:tenantId}" -o json
+
+#Create Azure Active Directory Application
+az ad app create --display-name apiTerraformCloud
+
+#show Id app List
+az ad app list --display-name apiTerraformCloud --query "{appId:[].appId}" -o json
+
+#show secret key
+az ad app credential list --id 00000000-0000-0000-0000-000000000000
+
+#Create User aplication
+az ad sp create-for-rbac --role="Contributor" --name="apiTerraForm" --scopes="/subscriptions/SUBSCRIPTION_ID"
