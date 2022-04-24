@@ -3,7 +3,7 @@ variable "location" {
   type    = string
 }
 variable "project" {
-  default = "tf-linux"
+  default = "tf-ans"
   type    = string
 }
 variable "vm_size" {
@@ -61,4 +61,15 @@ variable "tenant_id" {
   sensitive = true
 
 }
-
+variable "dns_zone" {
+  default = "exemple.com.br"
+}
+variable "rg_zone" {
+  default = "rg-dns"
+}
+variable "dns_TTL" {
+   default = "60"
+}
+variable "record_a_site" {
+  default = "www"
+}
